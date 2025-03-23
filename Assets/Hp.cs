@@ -5,16 +5,16 @@ using UnityEngine;
 public class Hp : MonoBehaviour
 {
     public int maxHp;
-    public int currrentHp;
+    public int currentHp;
 
     private void Start()
     {
-        currrentHp = maxHp;
+        currentHp = maxHp;
     }
-    public void Damage(int dmaage)
+    public void Damage(int damage)
     {
-        currrentHp -= dmaage;
-        if (currrentHp <= 0)
+        currentHp -= damage;
+        if (currentHp <= 0)
         {
             gameObject.SetActive(false);
         }
